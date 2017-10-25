@@ -1,0 +1,18 @@
+<html xmlns:concordion = "http://www.concordion.org/2007/concordion">
+   <head>
+      <link href = "../concordion.css" rel = "stylesheet" type="text/css" />
+   </head>
+
+   <body>
+      <h1>System Specifications</h1>
+      <p>We are building specifications for our online order tracking application.</p>
+      <p>Following is the requirement to show greeting to logged in user:</p>
+      <div class = "example">      
+         <h3>Example</h3>
+         <p>When <span concordion:set = "#userName">Robert</span> 
+            logs in the system, a greeting "<span concordion:assertEquals = "getGreeting(#userName)">
+            Hello Robert!</span>" is displayed.</p>
+      </div>
+   </body>
+
+</html>
